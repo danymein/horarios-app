@@ -1,0 +1,85 @@
+// _nav.scss
+
+// Variables específicas de la navegación
+$nav-background-color: #2D93AD;
+$nav-text-color: #ffffff;
+
+// Estilo general de la navegación
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: $nav-background-color;
+  color: $nav-text-color;
+}
+
+// Estilo para la lista de navegación
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+// Estilo para los elementos de la lista de navegación
+nav li {
+  float: left;
+}
+
+// Estilo para los enlaces de la lista de navegación
+nav a {
+  display: block;
+  color: $nav-text-color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+// Estilo para el estado activo de los enlaces
+nav a:active {
+  background-color: #4B5C6B;
+}
+
+// Estilo para el estado de desplazamiento
+nav.scrolled {
+  background-color: #ffffff;
+  color: $nav-text-color;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+// Estilo para el logotipo de navegación
+.nav-logo {
+  max-width: 200px;
+  height: auto;
+}
+
+// Estilo para el menú de navegación móvil
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+// Estilo para el contenedor del menú de navegación móvil
+.menu-container {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 0;
+  background-color: $nav-background-color;
+}
+
+// Estilo para los elementos del menú de navegación móvil
+.menu-container a {
+  display: block;
+  color: $nav-text-color;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+// Estilo para el estado activo de los elementos del menú de navegación móvil
+.menu-container a:active {
+  background-color: #4B5C6B;
+}
