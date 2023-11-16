@@ -1226,7 +1226,7 @@ h5 input {
   .container {
     padding: 0;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.45fr 80px 3.5fr 80px auto 80px 1992px 248px;
+    grid-template-rows: 0.45fr 80px auto 80px auto 80px 1992px 248px;
     grid-template-areas:
       "section-1"
       "section-2-header"
@@ -1335,7 +1335,7 @@ h5 input {
 
   .section-2 {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 0.5fr;
     gap: 8px;
     grid-template-areas:
       "section-2-perk-1"
@@ -1365,13 +1365,16 @@ h5 input {
   }
 
   .imagen-thumbnail {
-    height: 50%;
-    margin-bottom: 25%;
+    height: 35%;
+    margin-top:0px;
     object-fit: cover;
   }
 
   .section-2-spansitos {
-    margin-bottom: 20%;
+    margin-bottom: 0%;
+    height:65%;
+    padding: 0px 24px 0 24px;
+    top:0;
   }
 
   .section-2-spansitos h5 {
