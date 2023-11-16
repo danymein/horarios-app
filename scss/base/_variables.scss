@@ -1,8 +1,32 @@
 /*VARIABLES: guardar valores para reutilizar*/
-$color-primary: #2D93AD;
-$color-secondary: #4B5C6B;
-$color-background: #E2DADB;
-$color-accent: #58C2B9;
-$color-border: #C4C7C5;
-$color-text: #303941;
-$color-button: #2B4570;
+// _variables.scss
+
+// Colors
+$primary-color: #2B4570;
+$secondary-color: #58C2B9;
+$tertiary-color: #2D93AD;
+$background-color: #f2f3f4;
+$text-color: #111;
+$accent-color: #1bae9fb6;
+
+// Fonts
+$default-font: 'Roboto', sans-serif;
+
+// Sizes
+$button-width: 160px;
+$section-padding: 24px;
+$border-radius: 24px;
+
+// Breakpoints
+$tablet-max-width: 1150px;
+$mobile-max-width: 503px;
+$small-mobile-max-width: 360px;
+
+// Responsiveness
+$nav-height: 80px;
+$footer-height: 232px;
+$container-width: 80%;
+$section-margin: 8px;
+
+// Animation
+$transition-duration: 0.3s;
