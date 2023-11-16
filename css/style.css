@@ -106,7 +106,7 @@ a:active {
     "section-4-header section-4-header section-4-header section-4-header"
     "section-4 section-4 section-4 section-4"
     "footer footer footer footer";
-  width: 80%;
+  width: 100%;
 }
 
 .container-3 {
@@ -1001,8 +1001,15 @@ h5 input {
   border-image: linear-gradient(to right, transparent, #C4C7C5, transparent) 0.5;
 }
 
-/*TABLETS*/
+/*DESKTOP NARROW WINDOW*/
 @media screen and (max-width: 1150px) {
+  .container {
+    width: 100%;
+  }
+
+
+/*TABLETS*/
+@media screen and (max-width: 996px) {
   .body {
     width: 100%;
   }
