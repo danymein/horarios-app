@@ -1016,7 +1016,7 @@ h5 input {
 
     .container {
       grid-template-columns: 1fr;
-      grid-template-rows: auto 80px 2426px 80px auto 80px 1992px 280px;
+      grid-template-rows: auto 80px 2426px 80px auto 80px 2030px 280px;
       grid-template-areas:
         "section-1"
         "section-2-header"
@@ -1176,7 +1176,7 @@ h5 input {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: 80px 564px 80px 564px 80px 564px;
-      gap: 0px 8px;
+      gap: 8px;
       grid-auto-flow: row;
       grid-template-areas:
         "section-4-row-1"
@@ -1193,14 +1193,17 @@ h5 input {
     }
 
     .section-4-row-1 {
+      margin-top: 8px;
       height: 80px;
     }
 
     .section-4-row-2 {
+      margin-top: 8px;
       height: 80px;
     }
 
     .section-4-row-3 {
+      margin-top: 8px;
       height: 80px;
     }
 
