@@ -1,85 +1,95 @@
 // _nav.scss
 
-// Variables específicas de la navegación
-$nav-background-color: #2D93AD;
-$nav-text-color: #ffffff;
-
 // Estilo general de la navegación
 nav {
-  width: 100%;
-  position: fixed;
-  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "logo nav-list nav-list login login" "logo nav-list nav-list login login" "logo nav-list nav-list login login";
+  grid-area: NavBar;
+  align-items: center;
+  text-align: right;
   z-index: 2;
-  background-color: $nav-background-color;
-  color: $nav-text-color;
+  position: sticky !important;
+  top: 0 !important;
+  border-bottom: 2px solid #C4C7C5;
+  width: 100%;
+  height: 80px;
+  background-color: $background-color_2;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
 }
 
-// Estilo para la lista de navegación
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+.logo {
+  grid-area: logo;
+  display: flex;
+  align-items: self-start;
+  padding-left: 56px;
+
+  img {
+    width: auto;
+    height: 36px;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
 }
 
-// Estilo para los elementos de la lista de navegación
-nav li {
-  float: left;
+.login {
+  grid-area: login;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  align-items: center;
+  padding-right: 54px;
+
+  .btn {
+    button {
+      &::before {
+        content: "Crear horarios ";
+      }
+    }
+  }
 }
 
-// Estilo para los enlaces de la lista de navegación
-nav a {
-  display: block;
-  color: $nav-text-color;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-// Estilo para el estado activo de los enlaces
-nav a:active {
-  background-color: #4B5C6B;
-}
-
-// Estilo para el estado de desplazamiento
-nav.scrolled {
-  background-color: #ffffff;
-  color: $nav-text-color;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-}
-
-// Estilo para el logotipo de navegación
-.nav-logo {
-  max-width: 200px;
-  height: auto;
-}
-
-// Estilo para el menú de navegación móvil
-.menu-icon {
+.login-responsive-2 {
   display: none;
-  font-size: 24px;
-  cursor: pointer;
 }
 
-// Estilo para el contenedor del menú de navegación móvil
-.menu-container {
-  display: none;
-  position: fixed;
-  top: 60px;
-  right: 0;
-  background-color: $nav-background-color;
+.nav-list {
+  grid-area: nav-list;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-right: 8px;
 }
 
-// Estilo para los elementos del menú de navegación móvil
-.menu-container a {
-  display: block;
-  color: $nav-text-color;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
+.nav-links {
+  list-style: none;
+  padding-inline-start: 0 !important;
+  margin-bottom: 0 !important;
 
-// Estilo para el estado activo de los elementos del menú de navegación móvil
-.menu-container a:active {
-  background-color: #4B5C6B;
+  li {
+    margin-right: 24px;
+    display: inline-block;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+  a {
+    color: $color_8 !important;
+    text-decoration: none;
+
+    &:visited {
+      color: $color_8 !important;
+    }
+
+    &:hover {
+      color: $color_9 !important;
+    }
+  }
 }

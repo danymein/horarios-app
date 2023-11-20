@@ -1,1 +1,449 @@
 // _mediaquery.scss
+
+// PANTALLAS GRANDES
+@media screen and (min-width: 1300px) {
+    .container {
+        width: 80%;
+    }
+
+    .container-3 {
+        width: 80%;
+    }
+}
+
+// DESKTOP NARROW WINDOW
+@media screen and (max-width: 1150px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 80px 2426px 80px auto auto 80px 2030px 280px;
+        grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "quotes" "section-4-header" "section-4" "footer";
+        max-width: 100%;
+        margin: 0;
+    }
+}
+
+// TABLETS
+
+@media screen and (max-width: 996px) {
+	.body {
+		width: 100%;
+	}
+
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 80px 2426px 80px auto auto 80px 2030px 280px;
+		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "quotes" "section-4-header" "section-4" "footer";
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+	}
+
+	.container-3 {
+		width: 100%;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 80px 820px 320px;
+	}
+
+	nav {
+		z-index: 1;
+		display: grid;
+		grid-area: "navi";
+		grid-template-columns: 1fr 0px 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "logo nav-list login login" "logo nav-list login login";
+		gap: 0px 0px;
+		grid-auto-flow: row;
+		max-width: 100%;
+	}
+
+	.login {
+		gap: 24px;
+		padding-right: 64px;
+	}
+
+	.logo a img {
+		margin-left: 0;
+	}
+
+	.login .btn button::before {
+		content: "Crear horarios";
+	}
+
+	.login-responsive-2 {
+		display: none;
+	}
+
+	.nav-list {
+		visibility: hidden;
+	}
+
+	nav img {
+		margin-left: 8px;
+	}
+
+	.fill {
+		margin: 0px;
+	}
+
+	h1 {
+		font-size: 42pt;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-size: 32pt;
+	}
+
+	.section-1 {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "section-1-copy-1 section-1-copy-1 section-1-copy-1" "section-1-copy-1 section-1-copy-1 section-1-copy-1" "section-1-copy-1 section-1-copy-1 section-1-copy-1";
+		grid-area: section-1;
+		margin: 8px 8px 0px 8px;
+		border: 1px #C4C7C5 solid;
+	}
+
+	.section-1-copy-1 {
+		border-radius: 24px;
+		padding: 56px;
+	}
+
+	.section-1-img-1 {
+		border-radius: 0 0 24px 24px;
+	}
+
+	.btn button {
+		width: 160px;
+	}
+
+	.login a {
+		width: 160px;
+	}
+
+	.section-2 {
+		grid-template-columns: 1fr;
+		grid-template-rows: 600px 600px 600px 600px;
+		gap: 8px;
+		grid-template-areas: "section-2-perk-1" "section-2-perk-2" "section-2-perk-3" "section-2-perk-4";
+		grid-area: section-2;
+		border-radius: 24px;
+		padding: 0px;
+		height: 100%;
+	}
+
+	.section-2-perk-1 {
+		height: 100%;
+	}
+
+	.section-2-perk-2 {
+		height: 100%;
+	}
+
+	.section-2-perk-3 {
+		height: 100%;
+	}
+
+	.section-2-perk-4 {
+		height: 100%;
+	}
+
+	.imagen-thumbnail {
+		height: 50%;
+		object-fit: cover;
+	}
+
+	.section-2-spansitos {
+		height: 50%;
+	}
+
+	.section-2-spansitos h5 {
+		font-size: 28pt;
+	}
+
+	.section-2-spansitos h6 {
+		font-size: 20pt;
+	}
+
+	.section-3-header h2 {
+		margin: -24px;
+	}
+
+	.section-4 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 80px 564px 80px 564px 80px 564px;
+		gap: 8px;
+		grid-auto-flow: row;
+		grid-template-areas: "section-4-row-1" "section-4-content-1" "section-4-row-2" "section-4-content-2" "section-4-row-3" "section-4-content-3";
+		grid-area: section-4;
+		margin: 50px 8px 0px 8px;
+		border-radius: 24px;
+		padding: 0px 10% 0px 10%;
+		text-align: center;
+	}
+
+	.section-4-row-1 {
+		margin-top: 8px;
+		height: 80px;
+	}
+
+	.section-4-row-2 {
+		margin-top: 8px;
+		height: 80px;
+	}
+
+	.section-4-row-3 {
+		margin-top: 8px;
+		height: 80px;
+	}
+
+	.section-4-content-1,
+  .section-4-content-2,
+  .section-4-content-3 {
+		height: 564px;
+	}
+
+	.section-3 {
+		padding: 8px;
+	}
+
+	footer {
+		padding: 24px;
+	}
+}
+
+// DISPOSITIVOS MÓVILES
+
+@media screen and (max-width: 503px) {
+	.container {
+		padding: 0;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.45fr 80px auto 80px auto auto 80px 1992px 248px;
+		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "quotes" "section-4-header" "section-4" "footer";
+	}
+
+	.container-3 .section-2-header {
+		padding: 24px 0 0 8px;
+	}
+
+	nav {
+		display: grid;
+		grid-template-columns: 1fr 0px 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: "logo nav-list login login" "logo nav-list login login";
+		gap: 0px 0px;
+		grid-auto-flow: row;
+	}
+
+	.logo {
+		padding-left: 24px;
+	}
+
+	.logo a img {
+		margin-left: 0;
+	}
+
+	.nav-list {
+		visibility: hidden;
+	}
+
+	nav img {
+		margin-left: 8px;
+	}
+
+	.fill {
+		margin: 0px;
+	}
+
+	h1 {
+		font-size: 30pt;
+		font-weight: 500;
+	}
+
+	h2 {
+		font-size: 26pt;
+	}
+
+	.section-1 {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas: "section-1-copy-1 section-1-copy-1 section-1-copy-1" "section-1-copy-1 section-1-copy-1 section-1-copy-1" "section-1-copy-1 section-1-copy-1 section-1-copy-1";
+		grid-area: section-1;
+		margin: 8px 8px 0px 8px;
+		border: 1px #C4C7C5 solid;
+	}
+
+	.section-1 h4 {
+		font-size: 14pt;
+	}
+
+	.section-1-copy-1 {
+		border-radius: 24px;
+	}
+
+	.btn button {
+		width: 160px;
+	}
+
+	.login {
+		padding-right: 36px;
+	}
+
+	.login .fill {
+		visibility: hidden;
+	}
+
+	.login a {
+		width: 160px;
+		gap: 0px;
+	}
+
+	.login .btn button::before {
+		content: "Iniciar sesión ";
+	}
+
+	.login-responsive-1 {
+		display: none;
+	}
+
+	.login-responsive-2 {
+		display: block;
+	}
+
+	.section-2 {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr 0.5fr;
+		gap: 8px;
+		grid-template-areas: "section-2-perk-1" "section-2-perk-2" "section-2-perk-3" "section-2-perk-4";
+		grid-area: section-2;
+		border-radius: 24px;
+		padding: 0px;
+		height: 100%;
+	}
+
+	.section-2-perk-1 {
+		height: 100%;
+	}
+
+	.section-2-perk-2 {
+		height: 100%;
+	}
+
+	.section-2-perk-3 {
+		height: 100%;
+	}
+
+	.section-2-perk-4 {
+		height: 100%;
+	}
+
+	.imagen-thumbnail {
+		height: 35%;
+		margin-top: 0px;
+		object-fit: cover;
+	}
+
+	.section-2-spansitos {
+		margin-bottom: 0%;
+		height: 65%;
+		padding: 0px 24px 0 24px;
+		top: 0;
+	}
+
+	.section-2-spansitos h5 {
+		font-size: 20pt;
+	}
+
+	.section-2-spansitos h6 {
+		font-size: 14.5pt;
+	}
+
+	.section-3-header h2 {
+		margin: -24px;
+	}
+
+	.section-4 {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 80px 564px 80px 564px 80px 564px;
+		gap: 0px 8px;
+		grid-auto-flow: row;
+		grid-template-areas: "section-4-row-1" "section-4-content-1" "section-4-row-2" "section-4-content-2" "section-4-row-3" "section-4-content-3";
+		grid-area: section-4;
+		margin: 56px 8px 0px 8px;
+		border-radius: 24px;
+		padding: 0 0 0;
+		text-align: center;
+	}
+
+	.section-4-row-1 {
+		height: 80px;
+	}
+
+	.section-4-row-2 {
+		height: 80px;
+	}
+
+	.section-4-row-3 {
+		height: 80px;
+	}
+
+	.section-4-content-1 {
+		height: 564px;
+	}
+
+	.section-4-content-2 {
+		height: 564px;
+	}
+
+	.section-4-content-3 {
+		height: 564px;
+	}
+
+	.section-1-copy-1 {
+		padding: 24px;
+	}
+
+	.section-3 {
+		padding: 8px 0 0;
+	}
+
+	footer {
+		padding: 24px;
+		height: 232px;
+	}
+}
+
+// Ocultar botón mail
+@media screen and (max-width:440px) {
+    .signup-box {
+        display: none;
+    }
+
+    .ocultarmail {
+        display: block;
+        background-color: #2B4570;
+        margin-bottom: 8px;
+    }
+
+    .ocultar2 {
+        display: block;
+    }
+
+    .vh-100 {
+        grid-area: quotes;
+        height: 680px !important;
+    }
+}
+
+// Cambiar botón inicio sesión
+@media screen and (max-width:360px) {
+    .login-responsive-2 {
+        display: none;
+    }
+
+    .login .fill {
+        visibility: visible;
+    }
+}

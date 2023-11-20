@@ -1,32 +1,26 @@
-/*VARIABLES: guardar valores para reutilizar*/
 // _variables.scss
 
-// Colors
-$primary-color: #2B4570;
-$secondary-color: #58C2B9;
-$tertiary-color: #2D93AD;
-$background-color: #f2f3f4;
-$text-color: #111;
-$accent-color: #1bae9fb6;
+// Colores
+$color_1: #2D93AD;
+$color_2: #4B5C6B;
+$color_3: #303941;
+$color_4: greenyellow;
+$color_5: #fcfcfc;
+$color_6: #fff;
+$color_7: #1bae9fb6;
+$color_8: #2B4570;
+$color_9: #58C2B9;
+$color_10: #111;
+$background-color_1: #E2DADB;
+$background-color_2: hsla(0, 100%, 100%, 0.75);
+$background-color_3: #f2f3f4;
+$background-color_4: #2D93AD;
+$background-color_5: #58C2B9;
+$background-color_6: #111;
+$background-color_7: #2B4570;
+$background-color_8: #1bae9fb6;
 
 // Fonts
-$default-font: 'Roboto', sans-serif;
-
-// Sizes
-$button-width: 160px;
-$section-padding: 24px;
-$border-radius: 24px;
+$font-family_1: 'Roboto', sans-serif;
 
 // Breakpoints
-$tablet-max-width: 1150px;
-$mobile-max-width: 503px;
-$small-mobile-max-width: 360px;
-
-// Responsiveness
-$nav-height: 80px;
-$footer-height: 232px;
-$container-width: 80%;
-$section-margin: 8px;
-
-// Animation
-$transition-duration: 0.3s;

@@ -1,101 +1,249 @@
 // _main.scss
 
+* {
+  margin: 0;
+  padding: 0;
+  font-family: $font-family_1;
+  border: 0px solid red;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  font-family: $font-family_1;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color_1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: $color_1;
+  font-size: 45pt;
+  font-weight: 475;
+  margin-left: 0%;
+  margin-right: 10%;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: $color_2;
+  font-size: 32pt;
+  font-weight: 475;
+  margin-left: 0%;
+  margin-right: 0%;
+  font-family: $font-family_1;
+  color: $color_3;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h3 {
+  font-size: 22pt;
+  font-weight: 475;
+  color: $color_3;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h4 {
+  font-size: 14pt;
+  font-weight: 400;
+  font-family: $font-family_1;
+  color: $color_3;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h5 {
+  font-size: 18pt;
+  font-weight: 475;
+  font-family: $font-family_1;
+  color: $color_3;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+
+  input {
+    border-radius: 50px;
+    padding: 10px 20px;
   }
-  
-  .container {
-    width: 80%;
-    margin: 0 auto;
+}
+
+h6 {
+  font-size: 13pt;
+  font-weight: 400;
+  font-family: $font-family_1;
+  color: $color_3;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+a {
+  &:active {
+    border: 0px solid black !important;
   }
-  
-  .header {
-    background-color: #2D93AD;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+
+  color: $color_1;
+
+  &:visited {
+    color: $color_1;
   }
-  
-  .nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    background-color: #2D93AD;
-    color: #ffffff;
+
+  &:hover {
+    color: $color_7;
   }
-  
-  .nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.45fr 80px 848px 80px auto auto 80px 778px 320px;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "section-1 section-1 section-1 section-1"
+    "section-2-header section-2-header section-2-header section-2-header"
+    "section-2 section-2 section-2 section-2"
+    "section-3-header section-3-header section-3-header section-3-header"
+    "section-3 section-3 section-3 section-3" "quotes quotes quotes quotes"
+    "section-4-header section-4-header section-4-header section-4-header"
+    "section-4 section-4 section-4 section-4"
+    "footer footer footer footer";
+  width: 100%;
+}
+
+.container-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 720px 320px;
+  gap: 86px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "section-2-header section-2-header section-2-header section-2-header"
+    "section-form section-form section-form section-form"
+    "footer footer footer footer";
+  width: 80%;
+}
+
+#especial {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 1fr 320px;
+}
+
+.login-form {
+  grid-area: section-form;
+  width: 100%;
+  padding: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    text-align: left;
+    line-height: 1.5;
+    margin-top: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
-  
-  .nav li {
-    float: left;
+}
+
+.input-form {
+  width: 360px;
+
+  div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    center {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
   }
-  
-  .nav a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+}
+
+.checkbox-flexito {
+  display: flex;
+  justify-content: center;
+  flex-direction: row !important;
+  align-items: center;
+
+  h6 {
+    margin-top: 8px;
   }
-  
-  .nav a:active {
-    background-color: #4B5C6B;
+}
+
+.iniciosesion {
+  align-items: center;
+  padding: 25px;
+  width: 500px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #2D93AD;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  width: 100%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #2D93AD;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  font-family: $font-family_1;
+  padding: 10px 20px;
+  background-color: $background-color_4;
+  color: $color_6;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 0px;
+  font-weight: 700;
+  transition: all 0.3s ease 0s;
+
+  &:hover {
+    background-color: $background-color_8;
   }
-  
-  .nav.scrolled {
-    background-color: #ffffff;
-    color: #ffffff;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .nav-logo {
-    max-width: 200px;
-    height: auto;
-  }
-  
-  .menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-  }
-  
-  .menu-container {
-    display: none;
-    position: fixed;
-    top: 60px;
-    right: 0;
-    background-color: #2D93AD;
-  }
-  
-  .menu-container a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  .menu-container a:active {
-    background-color: #4B5C6B;
-  }
-  
-  .main-content {
-    margin-top: 80px;
-    padding: 20px;
-  }
-  
-  .footer {
-    background-color: #2D93AD;
-    color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
-  }
+}
+
+.divs-centrados {
+  text-align: center;
+}
+
+.signup-box {
+  font-size: xx-small;
+  font-weight: 200;
+  display: flex;
+  margin-top: 25px;
+  padding: 0 0 24px 0;
+  flex-direction: column-reverse;
+  width: 37.5em;
+}
+
+#Titulo {
+  background-size: cover;
+  background-image: linear-gradient(rgba(91, 197, 187, 0), rgba(7, 79, 87, 0)), url("../img/back11.jpeg");
+  background-position: bottom;
+}

@@ -1,21 +1,24 @@
 // _footer.scss
 
 footer {
-    background-color: #2D93AD;
-    color: #ffffff;
-    padding: 50px 0;
-    text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ".";
+  grid-area: footer;
+  background-color: $background-color_7;
+  margin: 8px 8px 8px 8px;
+  border-radius: 24px;
+  padding: 56px;
+  border: 1px #C4C7C5 solid;
+
+  h2 {
+    color: $color_5;
   }
-  
-  footer h2 {
-    margin-bottom: 20px;
+
+  h6 {
+    color: $color_5;
   }
-  
-  footer h6 {
-    font-size: 1em;
-    margin-bottom: 10px;
-  }
-  
-  footer a {
-    color: #ffffff;
-  }
+}

@@ -1,104 +1,15 @@
 // _header.scss
 
-// Variables específicas del encabezado
-$header-background-color: #ffffff;
-$header-text-color: #2D93AD;
-
 // Estilo general del encabezado
 header {
   width: 100%;
   z-index: 1;
   position: sticky;
   top: 0 !important;
-  background-color: $header-background-color;
-  color: $header-text-color;
+  transition: transform 0.4s;
 }
 
-// Estilo para las etiquetas h1 en el encabezado
-h1 {
-  color: $header-text-color;
-  font-size: 45pt;
-  font-weight: 475;
-  margin-left: 0%;
-  margin-right: 10%;
-  margin-bottom: 8px;
-}
-
-// Estilo para las etiquetas h2 en el encabezado
-h2 {
-  color: #4B5C6B;
-  font-size: 32pt;
-  font-weight: 475;
-  margin-left: 0%;
-  margin-right: 0%;
-}
-
-// Estilo para las etiquetas h3 en el encabezado
-h3 {
-  font-size: 22pt;
-  font-weight: 475;
-  color: #303941;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-// Estilo para las etiquetas h4 en el encabezado
-h4 {
-  font-size: 14pt;
-  font-weight: 400;
-}
-
-// Estilo para las etiquetas h5 en el encabezado
-h5 {
-  font-size: 18pt;
-  font-weight: 475;
-}
-
-// Estilo para las etiquetas h6 en el encabezado
-h6 {
-  font-size: 13pt;
-  font-weight: 400;
-}
-
-// Estilo común para ciertos tipos de encabezados
-h2, h4, h5, h6 {
-  font-family: 'Roboto', sans-serif;
-  color: #303941;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-// Estilo para el estado activo de los enlaces
-a:active {
-  border: 0px solid black !important;
-}
-
-// Estilo para el ícono de material symbols
-.material-symbols-outlined {
-  font-variation-settings:
-    'FILL' 0,
-    'wght' 400,
-    'GRAD' 0,
-    'opsz' 24;
-}
-
-// Estilo para contenedor de secciones
-.container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.45fr 80px 848px 80px auto 80px 778px 320px;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "section-1 section-1 section-1 section-1"
-    "section-2-header section-2-header section-2-header section-2-header"
-    "section-2 section-2 section-2 section-2"
-    "section-3-header section-3-header section-3-header section-3-header"
-    "section-3 section-3 section-3 section-3"
-    "section-4-header section-4-header section-4-header section-4-header"
-    "section-4 section-4 section-4 section-4"
-    "footer footer footer footer";
-  width: 80%;
+header.hide {
+  transform: translateY(-100%);
+  transition: transform 1s;
 }
