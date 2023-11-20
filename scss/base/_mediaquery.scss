@@ -1,7 +1,7 @@
 // _mediaquery.scss
 
 // PANTALLAS GRANDES
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: nth($breakpoints,1)) {
     .container {
         width: 80%;
     }
@@ -12,7 +12,7 @@
 }
 
 // DESKTOP NARROW WINDOW
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: nth($breakpoints,2)) {
     .container {
         width: 100%;
         grid-template-columns: 1fr;
@@ -25,7 +25,7 @@
 
 // TABLETS
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: nth($breakpoints,3)) {
 	.body {
 		width: 100%;
 	}
@@ -215,7 +215,7 @@
 
 // DISPOSITIVOS MÓVILES
 
-@media screen and (max-width: 503px) {
+@media screen and (max-width: nth($breakpoints,4)) {
 	.container {
 		padding: 0;
 		grid-template-columns: 1fr;
@@ -416,7 +416,7 @@
 }
 
 // Ocultar botón mail
-@media screen and (max-width:440px) {
+@media screen and (max-width:nth($breakpoints,5)) {
     .signup-box {
         display: none;
     }
@@ -438,7 +438,7 @@
 }
 
 // Cambiar botón inicio sesión
-@media screen and (max-width:360px) {
+@media screen and (max-width:nth($breakpoints,6)) {
     .login-responsive-2 {
         display: none;
     }
