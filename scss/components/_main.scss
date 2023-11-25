@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   font-family: $font-family_1;
-  border: 0px solid red;
+  border: 1px solid red;
   box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@ a {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.45fr 80px 848px 80px auto auto 80px 778px 320px;
+  grid-template-rows: 0.45fr 80px 848px 80px auto 80px auto 80px 778px 320px;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -112,7 +112,9 @@ a {
     "section-2-header section-2-header section-2-header section-2-header"
     "section-2 section-2 section-2 section-2"
     "section-3-header section-3-header section-3-header section-3-header"
-    "section-3 section-3 section-3 section-3" "quotes quotes quotes quotes"
+    "section-3 section-3 section-3 section-3"
+    "section-testimonios section-testimonios section-testimonios section-testimonios"
+    "quotes quotes quotes quotes"
     "section-4-header section-4-header section-4-header section-4-header"
     "section-4 section-4 section-4 section-4"
     "footer footer footer footer";
@@ -123,6 +125,19 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 80px 720px 320px;
+  gap: 86px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "section-2-header section-2-header section-2-header section-2-header"
+    "section-form section-form section-form section-form"
+    "footer footer footer footer";
+  width: 80%;
+}
+
+.container-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 360px 320px;
   gap: 86px;
   grid-auto-flow: row;
   grid-template-areas:

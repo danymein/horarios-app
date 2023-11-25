@@ -1,39 +1,39 @@
 // _mediaquery.scss
 
 // PANTALLAS GRANDES
-@media screen and (min-width: nth($breakpoints,1)) {
-    .container {
-        width: 80%;
-    }
+@media screen and (min-width: nth($breakpoints, 1)) {
+	.container {
+		width: 80%;
+	}
 
-    .container-3 {
-        width: 80%;
-    }
+	.container-3 {
+		width: 80%;
+	}
 }
 
 // DESKTOP NARROW WINDOW
-@media screen and (max-width: nth($breakpoints,2)) {
-    .container {
-        width: 100%;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto 80px 2426px 80px auto auto 80px 2030px 280px;
-        grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "quotes" "section-4-header" "section-4" "footer";
-        max-width: 100%;
-        margin: 0;
-    }
+@media screen and (max-width: nth($breakpoints, 2)) {
+	.container {
+		width: 100%;
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 80px 850px 80px auto 80px auto 80px 750px 280px;
+		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "section-testimonios" "quotes" "section-4-header" "section-4" "footer";
+		max-width: 100%;
+		margin: 0;
+	}
 }
 
 // TABLETS
 
-@media screen and (max-width: nth($breakpoints,3)) {
+@media screen and (max-width: nth($breakpoints, 3)) {
 	.body {
 		width: 100%;
 	}
 
 	.container {
 		grid-template-columns: 1fr;
-		grid-template-rows: auto 80px 2426px 80px auto auto 80px 2030px 280px;
-		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "quotes" "section-4-header" "section-4" "footer";
+		grid-template-rows: auto 80px 2426px 80px auto 80px auto 80px 2030px 280px;
+		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "section-testimonios" "quotes" "section-4-header" "section-4" "footer";
 		width: 100%;
 		max-width: 100%;
 		margin: 0;
@@ -199,8 +199,8 @@
 	}
 
 	.section-4-content-1,
-  .section-4-content-2,
-  .section-4-content-3 {
+	.section-4-content-2,
+	.section-4-content-3 {
 		height: 564px;
 	}
 
@@ -215,12 +215,12 @@
 
 // DISPOSITIVOS MÓVILES
 
-@media screen and (max-width: nth($breakpoints,4)) {
+@media screen and (max-width: nth($breakpoints, 4)) {
 	.container {
 		padding: 0;
 		grid-template-columns: 1fr;
-		grid-template-rows: 0.45fr 80px auto 80px auto auto 80px 1992px 248px;
-		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "quotes" "section-4-header" "section-4" "footer";
+		grid-template-rows: 0.45fr 80px auto 80px auto 80px auto 80px 1992px 248px;
+		grid-template-areas: "section-1" "section-2-header" "section-2" "section-3-header" "section-3" "section-testimonios" "quotes" "section-4-header" "section-4" "footer";
 	}
 
 	.container-3 .section-2-header {
@@ -363,6 +363,15 @@
 		margin: -24px;
 	}
 
+	.citas,
+	.h-100 {
+		height: 90% !important;
+		row-gap: 8px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
 	.section-4 {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -416,34 +425,34 @@
 }
 
 // Ocultar botón mail
-@media screen and (max-width:nth($breakpoints,5)) {
-    .signup-box {
-        display: none;
-    }
+@media screen and (max-width:nth($breakpoints, 5)) {
+	.signup-box {
+		display: none;
+	}
 
-    .ocultarmail {
-        display: block;
-        background-color: #2B4570;
-        margin-bottom: 8px;
-    }
+	.ocultarmail {
+		display: block;
+		background-color: #2B4570;
+		margin-bottom: 8px;
+	}
 
-    .ocultar2 {
-        display: block;
-    }
+	.ocultar2 {
+		display: block;
+	}
 
-    .vh-100 {
-        grid-area: quotes;
-        height: 680px !important;
-    }
+	.vh-100 {
+		grid-area: quotes;
+		height: 680px !important;
+	}
 }
 
 // Cambiar botón inicio sesión
-@media screen and (max-width:nth($breakpoints,6)) {
-    .login-responsive-2 {
-        display: none;
-    }
+@media screen and (max-width:nth($breakpoints, 6)) {
+	.login-responsive-2 {
+		display: none;
+	}
 
-    .login .fill {
-        visibility: visible;
-    }
+	.login .fill {
+		visibility: visible;
+	}
 }

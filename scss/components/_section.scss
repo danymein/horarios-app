@@ -186,20 +186,18 @@
   }
 }
 
-.vh-100 {
-  grid-area: quotes;
-  height: 340px !important;
-  border-radius: 24px;
-  padding: 56px 0 56px 0;
-  margin: 8px 8px 8px 8px;
-}
-
-.col {
-  margin-bottom: 0 !important;
-}
-
 #Planes {
   scroll-margin-top: 40px;
+}
+
+.section-testimonios {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-area: section-testimonios;
+  margin: 8px 8px 0px 8px;
+  border-radius: 24px;
+  padding: 56px;
 }
 
 .section-4-header {
@@ -220,7 +218,7 @@
   grid-auto-flow: row;
   grid-template-areas: "section-4-row-1 section-4-row-2 section-4-row-3" "section-4-content-1 section-4-content-2 section-4-content-3";
   grid-area: section-4;
-  margin: 50px 8px 0px 8px;
+  margin: 52px 8px 0px 8px;
   border-radius: 24px;
   padding: 0 56px;
   text-align: center;
